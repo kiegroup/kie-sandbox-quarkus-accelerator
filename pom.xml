@@ -60,11 +60,11 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <quarkus.platform.artifact-id>quarkus-bom</quarkus.platform.artifact-id>
     <quarkus.platform.group-id>io.quarkus.platform</quarkus.platform.group-id>
-    <quarkus.platform.version>3.2.10.Final</quarkus.platform.version>
-    <quarkus-plugin.version>3.2.10.Final</quarkus-plugin.version>
+    <quarkus.platform.version>3.8.4</quarkus.platform.version>
+    <quarkus-plugin.version>3.8.4</quarkus-plugin.version>
     <kogito.bom.group-id>org.kie.kogito</kogito.bom.group-id>
     <kogito.bom.artifact-id>kogito-bom</kogito.bom.artifact-id>
-    <kogito.bom.version>999-20240417-SNAPSHOT</kogito.bom.version>
+    <kogito.bom.version>999-20240623-SNAPSHOT</kogito.bom.version>
     <surefire-plugin.version>3.2.5</surefire-plugin.version>
   </properties>
   <dependencyManagement>
@@ -130,11 +130,6 @@
     <dependency>
       <groupId>org.kie</groupId>
       <artifactId>kie-addons-quarkus-process-svg</artifactId>
-    </dependency>
-
-    <dependency>
-      <groupId>org.jbpm</groupId>
-      <artifactId>jbpm-quarkus-devui</artifactId>
     </dependency>
 
     <dependency>
