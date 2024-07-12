@@ -87,10 +87,6 @@
   </dependencyManagement>
   <dependencies>
     <dependency>
-      <groupId>org.jbpm</groupId>
-      <artifactId>jbpm-with-drools-quarkus</artifactId>
-    </dependency>
-    <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-resteasy</artifactId>
     </dependency>
@@ -100,33 +96,42 @@
     </dependency>
     <dependency>
       <groupId>io.quarkus</groupId>
-      <artifactId>quarkus-arc</artifactId>
-    </dependency>
-
-    <!-- Persistence -->
-    <dependency>
-      <groupId>org.kie</groupId>
-      <artifactId>kie-addons-quarkus-persistence-infinispan</artifactId>
-    </dependency>
-
-    <dependency>
-      <groupId>io.quarkus</groupId>
-      <artifactId>quarkus-smallrye-reactive-messaging-kafka</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>io.quarkus</groupId>
       <artifactId>quarkus-smallrye-openapi</artifactId>
     </dependency>
     <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-smallrye-health</artifactId>
     </dependency>
-
     <dependency>
-      <groupId>org.kie</groupId>
-      <artifactId>kie-addons-quarkus-events-process</artifactId>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-arc</artifactId>
     </dependency>
 
+    <!-- jBPM and Drools Engines -->
+    <dependency>
+      <groupId>org.jbpm</groupId>
+      <artifactId>jbpm-with-drools-quarkus</artifactId>
+    </dependency>
+
+    <!-- Persistence -->
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-jdbc-h2</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-agroal</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.kie</groupId>
+      <artifactId>kie-addons-quarkus-persistence-jdbc</artifactId>
+    </dependency>
+
+    <!-- Additional Add-ons -->
+    <dependency>
+      <groupId>org.kie</groupId>
+      <artifactId>kie-addons-quarkus-process-management</artifactId>
+    </dependency>
     <dependency>
       <groupId>org.kie</groupId>
       <artifactId>kie-addons-quarkus-process-svg</artifactId>
